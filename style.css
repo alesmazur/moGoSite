@@ -540,7 +540,6 @@ hr {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 50%;
 }
 
 .reviews__photo--human {
@@ -652,6 +651,7 @@ hr {
 /* Works */
 .works {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -5px;
 }
 .works__col {
@@ -763,6 +763,7 @@ hr {
 /* Blog */
 .blog {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .blog__header {
@@ -770,9 +771,9 @@ hr {
 }
 .blog__date {
   position: absolute;
-  z-index: 2;
-  bottom: 10px;
-  left: -12px;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
   width: 60px;
   height: 70px;
   background-color: #95e1d3;
@@ -791,9 +792,13 @@ hr {
   font-family: "Roboto";
 }
 
+.blog {
+  margin: 0 -15px;
+}
+
 .blog__item {
-  width: 33, 333%;
-  padding-left: 30px;
+  width: 33.333%;
+  padding-left: 15px;
   cursor: pointer;
 }
 .blog__item:hover .blog__title {
@@ -811,6 +816,10 @@ hr {
   font-weight: 500;
   font-family: "Montserrat", san-serif;
   transition: all 0.2s linear;
+}
+.blog__content {
+  max-width: 400px;
+  width: 100%;
 }
 
 .blog__text {
@@ -886,6 +895,7 @@ hr {
 
 .footer__inner {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 65px;
   justify-content: space-between;
 }
@@ -1059,7 +1069,7 @@ hr {
   transition: all 0.3s ease-in-out 0s;
   margin: 0;
   padding: 0;
-  width: 33, 3333%;
+  width: 33%;
   border: 1px solid #fff;
 }
 .instagram__item img {
@@ -1070,8 +1080,10 @@ hr {
 }
 
 .i_img {
-  width: 88px;
-  height: 88px;
+  display: block;
+  width: 100%;
+  max-width: 88px;
+  height: auto;
 }
 
 /* Copyright */
@@ -1166,8 +1178,30 @@ hr {
   }
 
   .reviews__photo {
+    display: block;
     width: 120px;
     height: auto;
+    margin: 0 auto;
+  }
+
+  /* Clients */
+  .clients__item {
+    width: 100%;
+  }
+  /* Blog */
+  .blog__item {
+    width: 50%;
+  }
+  /* Footer */
+
+  .footer__col--left {
+    width: 100%;
+  }
+  .footer__col--mid {
+    width: 60%;
+  }
+  .footer__col--right {
+    width: 40%;
   }
 }
 
@@ -1257,7 +1291,7 @@ hr {
   .reviews__photo {
     width: 100%;
     max-width: 210px;
-    position: relative;
+    position: static;
   }
   .reviews__text {
     width: 100%;
@@ -1265,8 +1299,43 @@ hr {
   }
 
   /* Logos */
-  .logos {
+  .section--logos {
     display: none;
+  }
+  /* Works */
+  .works__col {
+    flex: none;
+    width: 50%;
+  }
+
+  /* Clients */
+  .clients__item {
+    width: 100%;
+    padding: 0 10px 0 170px;
+    margin-top: 0;
+  }
+  .clients__item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Blog */
+  .blog__item {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .blog__content {
+    margin: 0 auto;
+  }
+  .blog__img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .blog__date {
+    left: 116px;
   }
 }
 
@@ -1317,6 +1386,40 @@ hr {
   .devices__item--iphone {
     max-width: 180px;
   }
+
+  /* Works */
+  .works__col {
+    width: 100%;
+  }
+  /* Blog */
+  .blog__date {
+    left: 50px;
+  }
+  /* Blogs */
+  .footer__col {
+    width: 100%;
+  }
+  .instagram__item {
+    width: auto;
+  }
+
+  .subscribe {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .subscribe__input {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .subscribe__btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 /* Iphone5 */
@@ -1351,5 +1454,42 @@ hr {
     max-width: 120px;
     bottom: -40px;
     right: -30px;
+  }
+  /* Clients */
+  .clients__item {
+    display: flex;
+    flex-direction: column;
+    margin: 15 auto;
+    padding: 0;
+    justify-content: center;
+  }
+  .clients__item:first-child {
+    margin-top: 15px;
+  }
+
+  .clients__img {
+    position: static;
+    max-width: 170px;
+    margin: 20px auto;
+  }
+  .clients__header {
+    text-align: center;
+  }
+  .clients__header:after {
+    margin: 10px auto;
+  }
+
+  .section__title--clients:after {
+    content: none;
+  }
+
+  .blog__date {
+    left: -5px;
+    bottom: -5px;
+  }
+  /* Copyright */
+  .copyright__text {
+    font-size: 12px;
+    font-weight: 300;
   }
 }
