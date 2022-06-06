@@ -528,10 +528,11 @@ hr {
 /* Reviews */
 .reviews {
   padding: 0 110px;
+  position: relative;
 }
 .reviews__item {
   padding-left: 205px;
-  position: relative;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -1486,6 +1487,11 @@ hr {
   .blog__date {
     left: -5px;
     bottom: -5px;
+  }
+
+  /* Reviews */
+  .reviews__photo {
+    max-width: 180px;
   }
   /* Copyright */
   .copyright__text {
