@@ -58,11 +58,10 @@ $(function () {
   });
 
   // Slider
-  $("[data-slider]").slik({
+  $("[data-slider]").slick({
     infinite: true,
-    fade: true,
-    slidesToShow:1,
-    slidesToScroll: 1
-
+    fade: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   });
 });
