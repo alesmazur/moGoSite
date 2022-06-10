@@ -17,6 +17,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+JS
+
 
     <title>MoGo</title>
   </head>
@@ -27,19 +31,22 @@
       <header class="header" id="header" >
         <div class="container">
           <div class="header__inner">
-            <a class="header__logo" href="#">MoGo</a>
-            <nav class="nav">
-              <a class="nav__link active" href="#">about</a>
-              <a class="nav__link" href="#">service</a>
-              <a class="nav__link" href="#">work</a>
-              <a class="nav__link" href="#">blog</a>
-              <a class="nav__link" href="#">contact</a>
+            <a class="header__logo" data-scroll="#intro" href="#">MoGo</a>
+
+            <!-- Nav -->
+            <nav class="nav" id="nav">
+              <a class="nav__link active" href="#"   data-scroll="#about" >about</a>
+              <a class="nav__link" href="#"  data-scroll="#service">service</a>
+              <a class="nav__link" href="#"  data-scroll="#work">work</a>
+              <a class="nav__link" href="#"  data-scroll="#blog">blog</a>
+              <a class="nav__link" href="#" data-scroll="#footer">contact</a>
               <a class="nav__link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
               <a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </nav>
+
 <!-- Burger -->
 
-<button class="nav__toggle  "  type="button">
+<button class="nav__toggle" id="nav__toggle"  type="button">
   <span class="toggle__item">Menu</span>
 </button>
 <!-- /Burger -->
@@ -82,7 +89,7 @@
       </div>
 
       <!-- About Us -->
-      <section class="section">
+      <section class="section" id="about">
         <div class="container">
           <div class="section__header">
             <h3 class="section__uptitle">What we do</h3>
@@ -156,7 +163,7 @@
         </div>
       </div>
       <!--/container -->
-      <section class="section">
+      <section class="section" id="service">
         <div class="container">
           <div class="section__header">
             <h3 class="section__uptitle">We work with</h3>
@@ -277,8 +284,8 @@
             <div class="wedo__item">
               <!-- Accordion -->
               <div class="accordion">
-                <div class="accordion__item">
-                  <div class="accordion__header">
+                <div class="accordion__item" data-collapse="#wedo_1">
+                  <div class="accordion__header" >
                     <img
                       class="accordion__icon"
                       src="img/services/IMAGE.png"
@@ -286,7 +293,7 @@
                     />
                     <div class="accordion__title">Photography</div>
                   </div>
-                  <div class="accordion__content">
+                  <div class="accordion__content" id="wedo_1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -299,7 +306,7 @@
                 </div>
                 <!-- /Accordion item -->
 
-                <div class="accordion__item active">
+                <div class="accordion__item active" data-collapse="#wedo_2">
                   <div class="accordion__header">
                     <img
                       class="accordion__icon"
@@ -308,7 +315,7 @@
                     />
                     <div class="accordion__title">Creativity</div>
                   </div>
-                  <div class="accordion__content">
+                  <div class="accordion__content" id="wedo_2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -319,7 +326,9 @@
                     deserunt mollit anim id est laborum.
                   </div>
                 </div>
-                <div class="accordion__item">
+
+                <!-- wedo_3 -->
+                <div class="accordion__item" data-collapse="#wedo_3">
                   <div class="accordion__header">
                     <img
                       class="accordion__icon"
@@ -328,6 +337,17 @@
                     />
                     <div class="accordion__title">web design</div>
                   </div>
+                    <div class="accordion__content" id="wedo_3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia
+                      deserunt mollit anim id est laborum.
+                    </div>
+                 
                 </div>
               </div>
               <!-- /Accordion -->
@@ -342,6 +362,9 @@
           <div class="reviews">
             <a href="#" class="reviews__btn reviews__btn--prev">Prev</a>
             <a href="#" class="reviews__btn reviews__btn--next">Next</a>
+
+<!--Reviews item  -->
+          <div data-slider>
             <div class="reviews__item">
               <img class="reviews__photo" src="img/reviews.png" alt="review" />
               <div class="reviews__text">
@@ -351,6 +374,8 @@
               </div>
               <div class="reviews__author">Jon Doe</div>
             </div>
+          </div>
+
           </div>
         </div>
       </div>
@@ -466,7 +491,7 @@
   </div>
 </div>
 
-<section class="section">
+<section class="section" id="work">
   <div class="container">
     <div class="section__header">
       <h3 class="section__uptitle">What we do </h3>
@@ -617,7 +642,7 @@
   <!-- /Container -->
 </section>
 
-<section class="section">
+<section class="section" id="blog">
   <div class="container">
     <div class="section__header">
       <h3 class="section__uptitle">Our stories</h3>
@@ -697,7 +722,7 @@
 
 <!-- Footer -->
 
-<footer class="footer">
+<footer class="footer" id="footer">
 <div class="container">
 <div class="footer__inner">
   <div class="footer__col footer__col--left  ">
@@ -837,8 +862,10 @@
 
     <!-- jQueryCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <!-- /jQueryCDN -->
 
+ <!-- Slik slider -->
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
     <!-- JS -->
     <script src="app.js" > </script>
     

@@ -14,7 +14,6 @@ button:focus {
   outline: 0;
 }
 a {
-  style: none;
   text-decoration: none;
 }
 
@@ -46,7 +45,7 @@ h6 {
   overflow-y: hidden;
 }
 span {
-  decoration: none;
+  text-decoration: none;
   margin: 0;
   padding: 0;
   border: 0;
@@ -144,6 +143,7 @@ span {
 }
 
 .header.fixed {
+  padding: 10px 0;
   background-color: #f38181;
   position: fixed;
   top: 0;
@@ -273,8 +273,7 @@ span {
 }
 
 /* Slider */
-.slider {
-}
+
 .slider__inner {
   display: flex;
   justify-content: space-around;
@@ -547,15 +546,18 @@ hr {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 
 /* Accordion */
-.accordion {
-}
+
 .accordion__item {
   margin-bottom: 5px;
   border: 1px solid #e5e5e5;
   border-bottom: none;
+}
+.accordion__item:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .accordion__item.active {
@@ -1238,8 +1240,7 @@ hr {
     font-size: 32px;
   }
   /* Stat */
-  .stat__item {
-  }
+
   /* Services */
   .services__item {
     width: 50%;
@@ -1319,15 +1320,23 @@ hr {
     font-size: 40px;
     background-color: #f38181;
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: none;
   }
+
+  .nav.active {
+    display: flex;
+  }
+
   .nav__link {
     padding: 10px 20px;
   }
 
   .nav__toggle {
     display: block;
+  }
+  .nav__toggle:focus {
+    outline: 0;
   }
 
   .header__logo {
