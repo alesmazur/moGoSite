@@ -48,9 +48,9 @@ $(function () {
   });
   // Burder collapse
 
-  $(".nav__link, .hedaer__logo").on("click", function (event) {
+  $(".nav__link,  #header a").on("click", function (event) {
     event.preventDefault();
-    $(".nav__toggle, .nav").removeClass("active");
+    $("#nav__toggle, #nav").removeClass("active");
   });
 
   // Accordion collapse
