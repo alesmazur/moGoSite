@@ -1,13 +1,13 @@
 $(function () {
-  var header = $("#header");
-  var introH = $("#intro").innerHeight();
-  var scrollOffset = $(window).scrollTop();
+  let header = $("#header");
+  let introH = $("#intro").innerHeight();
+  let scrollOffset = $(window).scrollTop();
 
   // Fixed Header
 
   checkScroll(scrollOffset);
 
-  $(window).on("scroll", function () {
+  $(window).on("scroll load resize", function () {
     scrollOffset = $(this).scrollTop();
 
     checkScroll(scrollOffset);
@@ -24,19 +24,18 @@ $(function () {
   // Smooth scroll
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
-
-    var $this = $(this);
-    var blockId = $this.data("scroll");
-    var blockOffset = $(blockId).offset().top;
+    let $this = $(this);
+    let blockId = $this.data("scroll");
+    let blockOffset = $(blockId).offset().top;
 
     $("#nav a").removeClass("active");
     $this.addClass("active");
 
     $("html,body").animate(
       {
-        scrollTop: blockOffset,
+        scrollTop: blockOffset - 30,
       },
-      500
+      600
     );
   });
 
@@ -47,13 +46,19 @@ $(function () {
     $(this).toggleClass("active");
     $("#nav").toggleClass("active");
   });
+  // Burder collapse
+
+  $(".nav__link, .hedaer__logo").on("click", function (event) {
+    event.preventDefault();
+    $(".nav__toggle, .nav").removeClass("active");
+  });
 
   // Accordion collapse
   $("[data-collapse]").on("click", function (event) {
     event.preventDefault();
 
-    var $this = $(this);
-    var blockId = $this.data("collapse");
+    let $this = $(this);
+    let blockId = $this.data("collapse");
     $this.toggleClass("active");
   });
 

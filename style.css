@@ -684,8 +684,7 @@ hr {
   transform: translateY(-50%) rotate(225deg);
 }
 
-.reviews__btn--prevб
-.slick {
+.reviews__btn--prevб .slick {
   left: 0;
 }
 
@@ -1338,6 +1337,7 @@ hr {
 
   .nav__toggle {
     display: block;
+    transition: all 0.3s ease 0s;
   }
   .nav__toggle:focus {
     outline: 0;
