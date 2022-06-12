@@ -217,6 +217,7 @@ span {
   z-index: 20;
   padding: 12px 0;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 
 .nav__toggle.active {
@@ -1632,4 +1633,25 @@ hr {
     font-size: 12px;
     font-weight: 300;
   }
+}
+
+/* Slick dots */
+.slick-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots button {
+  font-size: 0;
+  background: #4be0c5;
+  width: 5px;
+  height: 13px;
+  border-radius: 50%;
+  margin: 5px;
+  opacity: 0.5;
+}
+.slick-active button {
+  opacity: 1;
+  border: 1px solid #f7afaf;
 }

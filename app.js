@@ -1,4 +1,6 @@
 $(function () {
+  // Vars
+
   let header = $("#header");
   let introH = $("#intro").innerHeight();
   let scrollOffset = $(window).scrollTop();
@@ -68,5 +70,7 @@ $(function () {
     fade: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    speed: 300,
+    dots: true,
   });
 });
