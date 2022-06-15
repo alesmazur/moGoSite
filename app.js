@@ -48,7 +48,7 @@ $(function () {
     $(this).toggleClass("active");
     $("#nav").toggleClass("active");
   });
-  // Burder collapse
+  // Burger collapse
 
   $(".nav__link,  #header a").on("click", function (event) {
     event.preventDefault();

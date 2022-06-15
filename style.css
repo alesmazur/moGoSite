@@ -229,6 +229,8 @@ span {
   transition: all 0.2s linear;
 }
 
+/* Burger cross */
+
 .nav__toggle.active .toggle__item:before {
   transform-origin: left top;
   transform: rotate(43deg);
@@ -1214,7 +1216,7 @@ hr {
 /* PC/Laptops */
 
 @media (max-width: 1230px) {
-  /* @Intro */
+  /* Intro */
   .intro__title {
     font-size: 120px;
   }
@@ -1335,6 +1337,7 @@ hr {
   .nav__link {
     padding: 10px 20px;
   }
+  /* Burger */
 
   .nav__toggle {
     display: block;
