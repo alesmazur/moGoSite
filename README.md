@@ -8,11 +8,10 @@
 ## Demo ⬇️
    https://alesmazur.github.io/moGoSite/
 
-## Features 
+## How to clone 
 
-```javascript
-function foo(item,index) {
-return item[index]
-}
+```json
+git clone https://github.com/alesmazur/moGoSite.git
+cd moGoSite
 ```
 
