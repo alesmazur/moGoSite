@@ -15,5 +15,5 @@ cd moGoSite
 
 ## Quick preview
 
-<p><img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-z0lc5NSoatU1XV_KZXFoJquU2Noo9TTJDM3d-GqxP1bgaEbNXfWGbBohcw_TtA1ol7u-38j8qHfro7N_THrEX8V6eC=s1600"  width="600" heigth="auto" >   </p>
+<p><img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-z0lc5NSoatU1XV_KZXFoJquU2Noo9TTJDM3d-GqxP1bgaEbNXfWGbBohcw_TtA1ol7u-38j8qHfro7N_THrEX8V6eC=s1600"  width="200" heigth="auto" >   </p>
 
