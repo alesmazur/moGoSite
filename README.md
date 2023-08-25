@@ -1,3 +1,5 @@
-# demo
-https://alesmazur.github.io/moGoSite/
-Mobile Adapted Landing Page
+# Responsice landing page
+
+## Demo ⬇️
+   https://alesmazur.github.io/moGoSite/
+
