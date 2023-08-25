@@ -6,8 +6,8 @@
 ## Features 
 
 ```javascript
-1.sdfsdf
-2.dfsdfsdf
-3.dgdsfsdg
+function foo(item,index) {
+return item[index]
+}
 ```
 
