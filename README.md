@@ -10,7 +10,7 @@
 
 ## How to clone 
 
-```json
+```xml
 git clone https://github.com/alesmazur/moGoSite.git
 cd moGoSite
 ```
