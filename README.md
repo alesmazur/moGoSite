@@ -6,11 +6,12 @@
 ## Demo ⬇️
    https://alesmazur.github.io/moGoSite/
 
-## How to clone 
+## How to clone and start in terminal
 
 ```xml
 git clone https://github.com/alesmazur/moGoSite.git
 cd moGoSite
+code .
 ```
 
 ## Quick preview
